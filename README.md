@@ -1,41 +1,43 @@
-# Website
+# Class Note
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+This is the website I put class notes into for courses I have taken so far.
 
-### Installation
+I'm currently using the Software Systems requirement for fall 2022.
+
+### Courses that I have taken
+
+CMPT courses
+
+- CMPT 105W
+- CMPT 130
+- CMPT 135
+- CMPT 213
+- CMPT 225
+- CMPT 272
+- CMPT 276
+- CMPT 307
+- CMPT 371
+- CMPT 376W
+- CMPT 383
+
+Math courses
+- MATH 150
+- MATH 240
+- MACM 101
+- MACM 201
+- BUS 232
+
+Electives
+- CRIM 101
+- EVSC 100
+- HIST 102W
+- IAT 210
+- CA 135
+- ARCH 301
+
+### Local Run
 
 ```
 $ yarn
-```
-
-### Local Development
-
-```
 $ yarn start
 ```
-
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
