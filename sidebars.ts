@@ -34,6 +34,13 @@ const sidebars: SidebarsConfig = {
       items: [
         "cmpt-307/intro"
       ]
+    },
+    {
+      type: 'category',
+      label: "CMPT 371 - Data Communications and Networking",
+      items: [
+        "cmpt-371/intro"
+      ]
     }
   ],
   electiveSidebar: [
