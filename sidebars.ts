@@ -21,11 +21,39 @@ const sidebars: SidebarsConfig = {
   lowerDivSidebar: [
     {
       type: 'category',
+      label: "CMPT 130 - Introduction to Computer Programming",
+      items: [
+        "cmpt-130/outline"
+      ]
+    },
+    {
+      type: 'category',
+      label: "CMPT 135 - Introduction to Computer Programming",
+      items: [
+        "cmpt-135/outline"
+      ]
+    },
+    {
+      type: 'category',
+      label: "CMPT 213 - Object Oriented Design in Java",
+      items: [
+        "cmpt-213/outline"
+      ]
+    },
+    {
+      type: 'category',
       label: 'CMPT 225 - Data Structures and Programming',
       items: [
-        "cmpt-225/intro"
+        "cmpt-225/outline"
       ],
-    }
+    },
+    {
+      type: 'category',
+      label: "CMPT 276 - Introduction to Software Engineering",
+      items: [
+        "cmpt-276/outline"
+      ]
+    },
   ],
   upperDivSidebar: [
     {
