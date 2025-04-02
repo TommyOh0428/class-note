@@ -75,11 +75,23 @@ const config: Config = {
       items: [
         {
           type: "docSidebar",
-          sidebarId: "tutorialSidebar",
+          sidebarId: "lowerDivSidebar",
           position: "left",
-          label: "Tutorial",
+          label: "Lower Division Courses",
         },
-        { to: "/blog", label: "Blog", position: "left" },
+        {
+          type: "docSidebar",
+          sidebarId: "upperDivSidebar",
+          position: "left",
+          label: "Upper Division Courses",
+        },
+        {
+          type: "docSidebar",
+          sidebarId: "electiveSidebar",
+          position: "left",
+          label: "Elective Courses",
+        },
+        // { to: "/blog", label: "Blog", position: "left" },
         {
           href: "https://github.com/facebook/docusaurus",
           label: "GitHub",
