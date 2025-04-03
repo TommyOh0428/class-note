@@ -5,7 +5,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: "Class notes",
+  title: "Tommy's Class Notes",
   tagline: "Made by Tommy Oh",
   favicon: "img/favicon.ico",
 
@@ -67,7 +67,7 @@ const config: Config = {
     // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
     navbar: {
-      title: "Class Notes",
+      title: "Tommy's Class Notes",
       logo: {
         alt: "My Site Logo",
         src: "img/logo.svg",
@@ -93,7 +93,7 @@ const config: Config = {
         },
         // { to: "/blog", label: "Blog", position: "left" },
         {
-          href: "https://github.com/facebook/docusaurus",
+          href: "https://github.com/TommyOh0428/class-note",
           label: "GitHub",
           position: "right",
         },
@@ -103,33 +103,116 @@ const config: Config = {
       style: "dark",
       links: [
         {
-          title: "Community",
+          title: "Math Courses",
           items: [
             {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
+              label: "MATH 150",
+              to: "docs/math-150/outline",
             },
             {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
+              label: "MATH 240",
+              to: "docs/math-240/outline",
             },
             {
-              label: "X",
-              href: "https://x.com/docusaurus",
+              label: "MACM 101",
+              to: "docs/macm-101/outline",
+            },
+            {
+              label: "MACM 201",
+              to: "docs/macm-201/outline",
+            },
+            {
+              label: "BUS 232",
+              to: "docs/bus-232/outline",
+            }
+          ],
+        },
+        {
+          title: "CMPT Lower Division Courses",
+          items: [
+            {
+              label: "CMPT 130",
+              to: "docs/cmpt-130/outline",
+            },
+            {
+              label: "CMPT 135",
+              to: "docs/cmpt-135/outline",
+            },
+            {
+              label: "CMPT 213",
+              to: "docs/cmpt-213/outline",
+            },
+            {
+              label: "CMPT 225",
+              to: "docs/cmpt-225/outline",
+            },
+            {
+              label: "CMPT 276",
+              to: "docs/cmpt-276/outline",
             },
           ],
         },
         {
-          title: "More",
+          title: "CMPT Upper Division Courses",
           items: [
             {
-              label: "Blog",
-              to: "/blog",
+              label: "CMPT 307",
+              to: "docs/cmpt-307/outline",
             },
             {
-              label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
+              label: "CMPT 310",
+              to: "docs/cmpt-310/outline"
             },
+            {
+              label: "CMPT 371",
+              to: "docs/cmpt-371/outline",
+            },
+            {
+              label: "CMPT 376W",
+              to: "docs/cmpt-376w/outline",
+            },
+            {
+              label: "CMPT 383",
+              to: "docs/cmpt-383/outline",
+            }
+          ],
+        },
+        {
+          title: "Lower Division Elective",
+          items: [
+            {
+              label: "CRIM 101",
+              to: "docs/crim-101/outline",
+            },
+            {
+              label: "CA 135",
+              to: "docs/ca-135/outline",
+            },
+            {
+              label: "HIST 102W",
+              to: "docs/hist-102w/outline",
+            },
+            {
+              label: "IAT 210",
+              to: "docs/iat-210/outline",
+            },
+            {
+              label: "EVSC 100",
+              to: "docs/evsc-100/outline",
+            },
+          ],
+        },
+        {
+          title: "Upper Division Elective",
+          items: [
+            {
+              label: "ARCH 301",
+              to: "docs/arch-301/outline",
+            },
+            {
+              label: "BUS 361",
+              to: "docs/bus-361/outline",
+            }
           ],
         },
       ],

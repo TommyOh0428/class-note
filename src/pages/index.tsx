@@ -17,12 +17,15 @@ function HomepageHeader() {
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className="hero__subtitle">
+          Some notes are incomplete and not all notes are available.
+        </p>
         <div className={styles.buttons}>
-          {/* <Link
+          <Link
             className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link> */}
+            to="https://www.sfu.ca/students/calendar/2022/fall/programs/software-systems/major/bachelor-of-science.html">
+            Software Systems Requirement Fall 2022
+          </Link>
         </div>
       </div>
     </header>
@@ -33,8 +36,8 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`Tommy's Class Notes`}
+      description="Class notes for courses at SFU">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

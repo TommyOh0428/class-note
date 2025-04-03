@@ -21,6 +21,34 @@ const sidebars: SidebarsConfig = {
   lowerDivSidebar: [
     {
       type: 'category',
+      label: "MATH 150 - Calculus I with Review",
+      items: [
+        "math-150/outline"
+      ]
+    },
+    {
+      type: 'category',
+      label: "MATH 240 - Algebra I: Linear Algebra",
+      items: [
+        "math-240/outline"
+      ]
+    },
+    {
+      type: 'category',
+      label: "MACM 101 - Discrete Mathematics I",
+      items: [
+        "macm-101/outline"
+      ]
+    },
+    {
+      type: 'category',
+      label: "MACM 201 - Discrete Mathematics II",
+      items: [
+        "macm-201/outline"
+      ]
+    },
+    {
+      type: 'category',
       label: "CMPT 130 - Introduction to Computer Programming",
       items: [
         "cmpt-130/outline"
@@ -54,29 +82,99 @@ const sidebars: SidebarsConfig = {
         "cmpt-276/outline"
       ]
     },
+    {
+      type: 'category',
+      label: "BUS 232 - Business Statistics",
+      items: [
+        "bus-232/outline"
+      ]
+    }
   ],
   upperDivSidebar: [
     {
       type: 'category',
       label: "CMPT 307 - Data Structures and Algorithms",
       items: [
-        "cmpt-307/intro"
+        "cmpt-307/outline"
+      ]
+    },
+    {
+      type: 'category',
+      label: "CMPT 310 - Introduction to Artificial Intelligence",
+      items: [
+        "cmpt-310/outline"
       ]
     },
     {
       type: 'category',
       label: "CMPT 371 - Data Communications and Networking",
       items: [
-        "cmpt-371/intro"
+        "cmpt-371/outline"
+      ]
+    },
+    {
+      type: 'category',
+      label: "CMPT 376W - Professional Responsibility and Technical Writing",
+      items: [
+        "cmpt-376w/outline"
+      ]
+    },
+    {
+      type: 'category',
+      label: "CMPT 383 - Comparative Programming Languages",
+      items: [
+        "cmpt-383/outline"
       ]
     }
   ],
   electiveSidebar: [
     {
       type: 'category',
+      label: "CRIM 101 - Introduction to Criminology",
+      items: [
+        "crim-101/outline"
+      ]
+    },
+    {
+      type: 'category',
+      label: "CA 135 - Introduction to Cinema",
+      items: [
+        "ca-135/outline"
+      ]
+    },
+    {
+      type: 'category',
+      label: "HIST 102W - Canada since Federation",
+      items: [
+        "hist-102w/outline"
+      ]
+    },
+    {
+      type: 'category',
+      label: "EVSC 100 - Introduction to Environmental Science",
+      items: [
+        "evsc-100/outline"
+      ]
+    },
+    {
+      type: 'category',
+      label: "IAT 210 - Introduction to Game Studies: Theory and Design",
+      items: [
+        "iat-210/outline"
+      ]
+    },
+    {
+      type: 'category',
+      label: "ARCH 301 - Ancient Visual Art",
+      items: [
+        "arch-301/outline"
+      ]
+    },
+    {
+      type: 'category',
       label: "BUS 361 - Project Management",
       items: [
-        "bus-361/intro"
+        "bus-361/outline"
       ]
     }
   ]
