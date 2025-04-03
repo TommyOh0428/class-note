@@ -37,7 +37,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title={`Tommy's Class Notes`}
-      description="Class notes for courses at SFU">
+      description={"Class notes for courses at SFU"}>
       <HomepageHeader />
       <main>
         <HomepageFeatures />

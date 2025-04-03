@@ -112,7 +112,7 @@ Design and analysis of efficient data structures and algorithms. General techniq
     - NP-completeness proof (Section 34.4)
     - NP-completeness problems (Section 34.5)
 ### Week 13
-- 13-1 Approximation Algorithms (Chapter 35)
+- 13-1: Approximation Algorithms (Chapter 35)
     - The Vertex-cover problem (Section 35.1)
     - The traveling-salesperson problem (Section 35.2)
     - The set-covering problems (Section 35.3)
