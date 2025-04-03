@@ -96,7 +96,7 @@ const sidebars: SidebarsConfig = {
       label: "CMPT 307 - Data Structures and Algorithms",
       items: [
         "cmpt-307/outline",
-        "cmpt-307/algorithms-ds",
+        "cmpt-307/algorithm-ds",
         "cmpt-307/hash-table",
         "cmpt-307/bst-rbt",
         "cmpt-307/recurrence",
