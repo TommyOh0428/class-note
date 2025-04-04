@@ -21,10 +21,6 @@ Chapter 24 in textbook
 
 Each edge represents one conduit (전달자) and has a capacity, which is an upper bound on the flow rate = units/time
 
-$$
-E = mc^2
-$$
-
 ### Constraints
 - Capacity constraint
 
@@ -38,10 +34,10 @@ $$
 
 - Flow conversation
 
-    $f\colon[a,b]\to\R$
-
     For all $u \in V - \{s, t\}$ (Source Node, Sink Node)
 
-    <!-- $\sum_{v \in V} f(v, u) = \sum_{v \in V} f(u, v)$ -->
+    $$
+    \sum_{v \in V} f(v, u) = \sum_{v \in V} f(u, v)
+    $$
     
     - The total flow into a vertex other than source and sink must equal flow out of that vertex

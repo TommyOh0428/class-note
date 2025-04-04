@@ -19,6 +19,7 @@ const sidebars: SidebarsConfig = {
   // But you can create a sidebar manually
 
   lowerDivSidebar: [
+    "lower-div-intro",
     {
       type: 'category',
       label: "MATH 150 - Calculus I with Review",
@@ -91,6 +92,7 @@ const sidebars: SidebarsConfig = {
     }
   ],
   upperDivSidebar: [
+    "upper-div-intro",
     {
       type: 'category',
       label: "CMPT 307 - Data Structures and Algorithms",
