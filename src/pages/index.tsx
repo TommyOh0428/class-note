@@ -7,9 +7,13 @@ import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
 
 import styles from './index.module.css';
+import getCurrentSem from '../functions/getDate';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
+  const currentSem = getCurrentSem();
+  const currentYear = new Date().getFullYear();
+
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
@@ -25,6 +29,14 @@ function HomepageHeader() {
             className="button button--secondary button--lg"
             to="https://www.sfu.ca/students/calendar/2022/fall/programs/software-systems/major/bachelor-of-science.html">
             Software Systems Requirement Fall 2022
+          </Link>
+        </div>
+        <br />
+        <div className={styles.buttons}>
+          <Link
+            className="button button--secondary button--lg"
+            to={`https://www.sfu.ca/students/calendar/${currentYear}/${currentSem}/programs/software-systems/major/bachelor-of-science.html`}>
+            Software Systems Requirement {currentSem} {currentYear}
           </Link>
         </div>
       </div>

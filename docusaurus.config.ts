@@ -1,10 +1,11 @@
 import { themes as prismThemes } from "prism-react-renderer";
-import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
-const config: Config = {
+export default {
   title: "Tommy's Class Notes",
   tagline: "Made by Tommy Oh",
   favicon: "img/favicon.ico",
@@ -37,10 +38,13 @@ const config: Config = {
       "classic",
       {
         docs: {
+          path: 'docs',
           sidebarPath: "./sidebars.ts",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl: "https://github.com/TommyOh0428/class-note",
+          remarkPlugins: [remarkMath],
+          rehypePlugins: [rehypeKatex],
         },
         blog: {
           showReadingTime: true,
@@ -61,6 +65,12 @@ const config: Config = {
         },
       } satisfies Preset.Options,
     ],
+  ],
+  stylesheets: [
+    {
+      href: '/class-note/katex/katex.min.css',
+      type: 'text/css',
+    },
   ],
 
   themeConfig: {
@@ -93,9 +103,10 @@ const config: Config = {
         },
         // { to: "/blog", label: "Blog", position: "left" },
         {
-          href: "https://github.com/TommyOh0428/class-note",
-          label: "GitHub",
+          type: "html",
           position: "right",
+          value:
+            '<a href="https://github.com/TommyOh0428/class-note" target="_blank" style="content: \'\'; width: 24px; height: 24px; background-image: url(\'https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg\'); background-repeat: no-repeat; background-size: 24px 24px; display: flex"></a>',
         },
       ],
     },
@@ -225,4 +236,4 @@ const config: Config = {
   } satisfies Preset.ThemeConfig,
 };
 
-export default config;
+
