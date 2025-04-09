@@ -1,6 +1,10 @@
 # Maximum Flow
 
+### Reference
+
 Chapter 24 in textbook
+
+[Max Flow Ford Fulkerson | Network Flow | Graph Theory](https://www.youtube.com/watch?v=LdOnanfc5TM) by WilliamFlset
 
 ## 24.1 Flow Network
 
@@ -42,7 +46,7 @@ Each edge represents one conduit (전달자) and has a capacity, which is an upp
     
     - The total flow into a vertex other than source and sink must equal flow out of that vertex
     - When $(u, v) \notin E$, there can't be flow from $u$ to $v$, and make $f(u, v) = 0$
-    - Nonnegative quantity $f(u, v) the flow from vertex $u$ to $v$, the value $|f|$ of a flow $f$ is defined as
+    - Nonnegative quantity $f(u, v)$ the flow from vertex $u$ to $v$, the value $|f|$ of a flow $f$ is defined as
 
     $$
     |f| = \sum_{v \in V} f(s, v) - \sum_{v \in V} f(v, s)
@@ -113,6 +117,25 @@ A path from source $s$ to sink $t$ in the residual graph where every edge has **
 - Example in textbook
 
 ![Residual Network](../../static/cmpt-307/residual-graph.png)
+
+### Max-Flow Min-cut Theorem
+
+In any flow network, the maximum flow from $s \rightarrow t$ is equal to the minimum capacity among all s-t cuts
+
+- Definition of cut
+
+    - A cut is a partition of vertices into sets $S$ and $T$ such that:
+        - $s \in S$, $t \in T$
+        - The capacity of the cut is
+        $$
+        \text{cap}(S, T) = \sum_{u \in S, v \in T} c(u, v)
+        $$
+        - You can think of it as the total capacity that would be “cut” if you disconnected s from t
+
+- The following are equivalent
+    1. $f$ is a maximum flow
+    2. $G_f$ has no augmenting path
+    3. $|f| = c(S, T)$ for some cut $(S, T)$
 
 ### Core steps in Ford-Fulkerson Algorithm
 1. Initialize $f(u, v) = 0;$  $\forall (u, v)$
