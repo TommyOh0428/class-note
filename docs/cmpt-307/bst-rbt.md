@@ -1,4 +1,3 @@
-# Binary Search Trees
+# Binary Search Trees & Red Black Trees
 
 
-# Red-Black Trees
