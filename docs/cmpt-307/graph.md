@@ -46,3 +46,14 @@ was discovered.
 ![dfs](../../static/cmpt-307/dfs.png)
 
 ![dfs-diagram](../../static/cmpt-307/dfs-diagram.png)
+
+## Strongly Connected Component (SCC)
+
+- There is $G = (V, E)$ and if we transpose the graph $G^T = (V, E^T)$ (meaning we switch the edge pointing to other direction), we should get same strongly connected component
+
+- If they form cycle, it is strongly connected graph
+
+1. Perform DFS first
+2. Make graph transpose
+3. Perform DFS with $G^T$
+    - if they have same output, they are strongly connected graph
