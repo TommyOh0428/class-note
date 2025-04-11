@@ -115,3 +115,23 @@ $$
     \sum_{i = 1}^{n} c_i \leq \sum_{i = 1}^{n} 2 - b_n + b_0 \\
     = 2n - b_n + b_0
     $$
+
+## Dynamic Table
+
+### Table insert
+
+Imagine a dynamic array that:
+- Doubles its size when full
+- Inserts element in $O(1)$ time normally
+- Occasionally performs and expensive copy when resizing
+
+Each insert might cost:
+- 1 if the table is not full
+- i if the table is full and you must copy i items into a new table of size 2i
+$$
+\sum_{i=1}^{n} c_i \leq n + \sum_{j=0}^{\lfloor \log n \rfloor} 2^j \\
+< n + 2n = 3n
+$$
+- $c_i$ = cost of the ith insert
+- n simple inserts of cost 1
+- sum of $2^j$ accounts for the costs when the array doubles and copies existing elements
