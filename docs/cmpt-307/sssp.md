@@ -27,6 +27,7 @@ if v.d > u.d + w(u, v)
 ## Dijkstra's Algorithm
 - Finds the shortest path
 - No negative edges
+- Runtime: $O(ElogV)$
 
 ![code](../../static/cmpt-307/dijkstra.png)
 

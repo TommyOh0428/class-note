@@ -127,8 +127,8 @@ $$
     1. $L \in NP$ (verify program that is polynomial)
     2. $L' \leq_P L$ for every $L' \in NP$ (L is upperbound for every $L' \in NP$ )
 
-- A language satisying condition 2 called NP-Hard
-    - NP-complete either one of them
+- A language satisying condition 2 called NP-Complete
+    - NP-Hard either one of them
 
 ### Common NP-Complete problems
 
@@ -204,6 +204,6 @@ There are several types of common NP-complete problems
         - If $\Phi$ is satisfiable then each clause $C_r$ must have at least one literal that is 1
         - Choose a subset $V'$ with one literal from each clause that is 1
         - $V'$ must form a clique since each vertex is from a different clause
-    - This graph can be constructed in polynomial time. Thus, Clique is NP-Hard.
+    - This graph can be constructed in polynomial time. Thus, Clique is NP-Complete.
 
     
